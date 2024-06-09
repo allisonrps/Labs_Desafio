@@ -8,6 +8,7 @@ https://labs-desafio.onrender.com/funcionario
 -------------------------------------------------------------
 
 DOCS SWAGGER:
+https://app.swaggerhub.com/apis/ALLISONRPS/api-funcionarios_labs/1.0.0#/
 docs/openapi.json
 docs/openapi.yaml
 
