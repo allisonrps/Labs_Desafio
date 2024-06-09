@@ -1,0 +1,201 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "API Funcionarios LABS",
+    "version": "1.0.0",
+    "contact": {}
+  },
+  "servers": [
+    {
+      "url": "http://localhost"
+    }
+  ],
+  "paths": {
+    "/funcionario/": {
+      "get": {
+        "tags": [
+          "FUNCIONÁRIOS"
+        ],
+        "summary": "Listando Todos os Funcionários",
+        "description": "Mostra todos os funcionários cadastrados",
+        "operationId": "listandoTodosOsFuncionRios",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "examples": {
+                "Listando Todos os Funcionários": {
+                  "value": ""
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "FUNCIONÁRIOS"
+        ],
+        "summary": "Adicionando Novo Funcionário",
+        "description": "Adiciona novo Funcionário",
+        "operationId": "adicionandoNovoFuncionRio",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cargo": {
+                    "type": "string",
+                    "example": "Software Engineer"
+                  },
+                  "contratado": {
+                    "type": "boolean",
+                    "example": false
+                  },
+                  "nome": {
+                    "type": "string",
+                    "example": "Clenilson Alberto"
+                  },
+                  "salario": {
+                    "type": "string",
+                    "example": "25000"
+                  }
+                }
+              },
+              "examples": {
+                "Adicionando Novo Funcionário": {
+                  "value": {
+                    "cargo": "Software Engineer",
+                    "contratado": false,
+                    "nome": "Clenilson Alberto",
+                    "salario": "25000"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/funcionario/665f9cac220be9caccfd8751": {
+      "get": {
+        "tags": [
+          "FUNCIONÁRIOS"
+        ],
+        "summary": "Listando Funcionário Específico",
+        "description": "Recupera insformações de funcionário espeficico pelo ID",
+        "operationId": "listandoFuncionRioEspecFico",
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    },
+    "/funcionario/6665ec089d9e76f8af7557e7": {
+      "put": {
+        "tags": [
+          "FUNCIONÁRIOS"
+        ],
+        "summary": "Atualizando Funcionário Específico",
+        "description": "Atualiza informações de funcionário específico pelo ID",
+        "operationId": "atualizandoFuncionRioEspecFico",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "cargo": {
+                    "type": "string",
+                    "example": "Software Engineer"
+                  },
+                  "contratado": {
+                    "type": "boolean",
+                    "example": true
+                  },
+                  "nome": {
+                    "type": "string",
+                    "example": "Clenilson Alberto"
+                  },
+                  "salario": {
+                    "type": "string",
+                    "example": "33000"
+                  }
+                }
+              },
+              "examples": {
+                "Atualizando Funcionário Específico": {
+                  "value": {
+                    "cargo": "Software Engineer",
+                    "contratado": true,
+                    "nome": "Clenilson Alberto",
+                    "salario": "33000"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "FUNCIONÁRIOS"
+        ],
+        "summary": "Deletando Funcionário Específico",
+        "description": "Deleta funcionário especifico pelo ID",
+        "operationId": "deletandoFuncionRioEspecFico",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "examples": {
+                "Deletando Funcionário Específico": {
+                  "value": ""
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": ""
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "securitySchemes": {
+      "apiKey": {
+        "type": "apiKey",
+        "name": "X-API-Key",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "apiKey": []
+    }
+  ],
+  "tags": [
+    {
+      "name": "FUNCIONÁRIOS"
+    }
+  ]
+}

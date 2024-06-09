@@ -1,3 +1,18 @@
+API DESAFIO LUIZA LABS
+Desenvolvimento WEB 3 - 3º DSM FATEC
+
+-------------------------------------------------------------
+RENDER DEPLOY:
+https://labs-desafio.onrender.com/funcionario
+
+-------------------------------------------------------------
+
+DOCS SWAGGER:
+docs/openapi.json
+docs/openapi.yaml
+
+-------------------------------------------------------------
+
 Iniciando com 'npm run dev'
 Acesso: HTTP://localhost:3000
 
