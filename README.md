@@ -1,11 +1,11 @@
 # API DESAFIO LUIZA LABS
 Desenvolvimento WEB 3 - 3º DSM FATEC
 
-![API Desafio Luiza Labs](../Labs_Desafio/prints/01.png)
-![API Desafio Luiza Labs](../Labs_Desafio/prints/02.png)
-![API Desafio Luiza Labs](../Labs_Desafio/prints/03.png)
-![API Desafio Luiza Labs](../Labs_Desafio/prints/04.png)
-![API Desafio Luiza Labs](../Labs_Desafio/prints/05.png)
+![API Desafio Luiza Labs](prints/01.png)
+![API Desafio Luiza Labs](prints/02.png)
+![API Desafio Luiza Labs](prints/03.png)
+![API Desafio Luiza Labs](prints/04.png)
+![API Desafio Luiza Labs](prints/05.png)
 
 ## Deploy
 A aplicação está disponível em: [Render Deploy](https://labs-desafio.onrender.com/funcionario)
