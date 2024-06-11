@@ -1,28 +1,32 @@
-API DESAFIO LUIZA LABS
+# API DESAFIO LUIZA LABS
 Desenvolvimento WEB 3 - 3º DSM FATEC
 
--------------------------------------------------------------
-RENDER DEPLOY:
-https://labs-desafio.onrender.com/funcionario
+![API Desafio Luiza Labs](../Labs_Desafio/prints/01.png)
+![API Desafio Luiza Labs](../Labs_Desafio/prints/02.png)
+![API Desafio Luiza Labs](../Labs_Desafio/prints/03.png)
+![API Desafio Luiza Labs](../Labs_Desafio/prints/04.png)
+![API Desafio Luiza Labs](../Labs_Desafio/prints/05.png)
 
--------------------------------------------------------------
+## Deploy
+A aplicação está disponível em: [Render Deploy](https://labs-desafio.onrender.com/funcionario)
 
-DOCS SWAGGER:
-https://app.swaggerhub.com/apis/ALLISONRPS/api-funcionarios_labs/1.0.0#/
-docs/openapi.json
-docs/openapi.yaml
+## Documentação Swagger
+- [SwaggerHub Documentation](https://app.swaggerhub.com/apis/ALLISONRPS/api-funcionarios_labs/1.0.0#/)
+- [openapi.json](docs/openapi.json)
+- [openapi.yaml](docs/openapi.yaml)
 
--------------------------------------------------------------
+## Iniciando a aplicação
+Para iniciar a aplicação localmente, utilize o comando:
+```bash
+npm run dev
+A aplicação estará acessível em: http://localhost:3000
 
-Iniciando com 'npm run dev'
-Acesso: HTTP://localhost:3000
+Endpoints
 
--------------------------------------------------------------
+Listando todos os funcionários (GET)
 
-LISTANDO TODOS OS FUNCIONÁRIOS (GET):
-localhost:3000/funcionario
-
-RESPOSTA:
+GET /funcionario
+Exemplo de resposta:
 
 [
   {
@@ -52,11 +56,10 @@ RESPOSTA:
 ]
 
 -------------------------------------------------------------
+Detalhando um funcionário específico (GET)
 
-DETALHANDO FUNCIONÁRIO ESPECÍFICO (GET):
-localhost:3000/funcionario/665f9cac220be9caccfd8751
-
-RESPOSTA:
+GET /funcionario/{id}
+Exemplo de resposta:
 
 {
   "_id": "665f9cac220be9caccfd8751",
@@ -66,57 +69,60 @@ RESPOSTA:
   "contratado": true,
   "__v": 0
 }
-
 -------------------------------------------------------------
 
-CADASTRO DE FUNCIONÁRIO (POST):
-localhost:3000/funcionario
+Cadastro de funcionário (POST)
+
+POST /funcionario
+Corpo da requisição:
 
 {
-"nome":"Clemilda Quitéria",
-"cargo":"Dev Back End",
-"salario":"20000",
-"contratado":true
+  "nome": "Clemilda Quitéria",
+  "cargo": "Dev Back End",
+  "salario": 20000,
+  "contratado": true
 }
 
-RESPOSTA:
+Exemplo de resposta:
 
 {
-    "message": "Funcionário criado com sucesso!"
+  "message": "Funcionário criado com sucesso!"
 }
 
 -------------------------------------------------------------
 
-ATUALIZANDO FUNCIONÁRIO (PUT):
-localhost:3000/funcionario/665f9cac220be9caccfd8751
+Atualizando um funcionário (PUT)
 
-  {
-    "nome": "Allison Rodrigues de Paula e Silva",
-    "cargo": "Dev Full Stack",
-    "salario": 40000,
-    "contratado": true,
-  }
+PUT /funcionario/{id}
 
-RESPOSTA:
+{
+  "nome": "Allison Rodrigues de Paula e Silva",
+  "cargo": "Dev Full Stack",
+  "salario": 40000,
+  "contratado": true
+}
 
-  {
-    "_id": "665f9cac220be9caccfd8751",
-    "nome": "Allison Rodrigues de Paula e Silva",
-    "cargo": "Dev Full Stack",
-    "salario": 40000,
-    "contratado": true,
-    "__v": 0
-  }
+Exemplo de resposta:
+
+{
+  "_id": "665f9cac220be9caccfd8751",
+  "nome": "Allison Rodrigues de Paula e Silva",
+  "cargo": "Dev Full Stack",
+  "salario": 40000,
+  "contratado": true,
+  "__v": 0
+}
 
 -------------------------------------------------------------
 
-DELETAR FUNCIONÁRIO (DELETE):
-localhost:3000/funcionario/665f9c0d5b69c91029d801db
+Deletar um funcionário (DELETE)
 
-RESPOSTA:
+DELETE /funcionario/{id}
+
+Exemplo de resposta:
 
 {
-    "message": "Funcionário deletado com sucesso!"
+  "message": "Funcionário deletado com sucesso!"
 }
 
 -------------------------------------------------------------
